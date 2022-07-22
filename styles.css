@@ -1,22 +1,36 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-size: 26px;
+    background-color:#292d2f;
+    color: #f6f6f6;
     margin: 0;
     padding: 0;
     display:flex;
     flex-direction:column;
 }
 
+main {
+    flex-grow:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+p {
+    margin: 0;
+}
+
 button {
     font-family:inherit;
     font-size:inherit;
+    color:inherit;
     height: 64px;
     width: 64px;
     padding: 12px;
     margin: 4px;
     border-style: none;
     border-radius: 8px;
-    color: #f6f6f6;
 
     display:flex;
     justify-content:center;
@@ -25,16 +39,12 @@ button {
 
 button:hover {
     cursor:pointer;
-}
-
-main {
-    flex-grow:1;
-    align-self: center;
-    margin: 24px auto;
+    opacity: 0.8;
 }
 
 .container {
-    padding: 16px;
+    width: 300px;
+    padding: 20px;
     border-radius: 5%;
     background-color: #040404;
 }
@@ -44,17 +54,17 @@ main {
     min-height: 100px;
     width: 100%;
     padding: 8px;
-    margin-bottom: 12px;
     border-radius: 8px;
-
-    font-size: 30px;
-    color: #f6f6f6;
-    text-align:right
+    text-align:right;
+    word-wrap:break-word;
 }
 
-#result {
-    margin-top: 8px;
-    color: #cfcfd2;
+#previous-operand {
+    opacity: 0.8;
+}
+
+#current-operand {
+    font-size: 48px;
 }
 
 .controls {
@@ -75,7 +85,6 @@ main {
 }
 
 footer {
-    background-color: #cfcfd2;
     text-align: center;
     font-size: 16px;
     padding: 16px;

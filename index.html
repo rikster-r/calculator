@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
         <div class="container">
             <div class="output">
-                <div id="operaions">5 + 10</div>
-                <div id="result">15</div>
+                <p id="previous-operand" data-previous-operand></p>
+                <p id="current-operand" data-current-operand></p>
             </div>
             <div class="controls">
-                <button class="output-controls" id="clear">C</button>
-                <button class="output-controls" id="sign">+/-</button>
-                <button class="output-controls" id="backspace">&#129044;</button>
-                <button class="actions" id="divide">&div;</button>
+                <button class="output-controls" data-clear>C</button>
+                <button class="output-controls" data-sign>+/-</button>
+                <button class="output-controls" data-delete>&#129044;</button>
+                <button class="actions" data-operation>÷</button>
     
-                <button class="digits" id="7">7</button>
-                <button class="digits" id="8">8</button>
-                <button class="digits" id="9">9</button>
-                <button class="actions" id="multiply">&times;</button>
+                <button class="digits" data-number>7</button>
+                <button class="digits" data-number>8</button>
+                <button class="digits" data-number>9</button>
+                <button class="actions" data-operation>×</button>
     
-                <button class="digits" id="4">4</button>
-                <button class="digits" id="5">5</button>
-                <button class="digits" id="6">6</button>
-                <button class="actions" id="substract">&minus;</button>
+                <button class="digits" data-number>4</button>
+                <button class="digits" data-number>5</button>
+                <button class="digits" data-number>6</button>
+                <button class="actions" data-operation>-</button>
     
-                <button class="digits" id="1">1</button>
-                <button class="digits" id="2">2</button>
-                <button class="digits" id="3">3</button>
-                <button class="actions" id="add">&plus;</button>
+                <button class="digits" data-number>1</button>
+                <button class="digits" data-number>2</button>
+                <button class="digits" data-number>3</button>
+                <button class="actions" data-operation>+</button>
     
-                <button class="digits" id="00">00</button>
-                <button class="digits" id="0">0</button>
-                <button class="digits" id="decimal">.</button>
-                <button class="actions" id="equals">&equals;</button>
+                <button class="digits" data-number>00</button>
+                <button class="digits" data-number>0</button>
+                <button class="digits" data-number>.</button>
+                <button class="actions" data-equals>=</button>
             </div>
         </div>
     </main>
