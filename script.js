@@ -24,6 +24,7 @@ class Calculator {
     }
 
     appendNumber(number) {
+        if ((number === '0' || number === '00') && !this.currentOperand) return;
         if (number === '.' && this.currentOperand.includes('.')) return;
         this.currentOperand += number;
     }
